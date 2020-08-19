@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ALNPRA INFO</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="ct.css">
+
+<body>
+  <H1>MEMBUAT TAMPILAN COUNTDOWN TIME SEDERHANA PADA WEBSITE</H1>
+  <img src="u.png">
+  <br>
+  <br>
+  <br>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+  <h2>Source Code HTML</h2>
+  <form>
+    <textarea class="kgh" name="komentar5" disabled="disabled" rows="20">
+  <div class="container">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<img src="newyear1.gif">
+	<div class="box">
+  <h1 id="head">SELAMAT TAHUN BARU 2020</h1>
+  <ul>
+  	<aside class="sidesbar">
+  		<div class="widgetgo">
+    <li><span class="border" id="days"></span>days</li>
+    <li><span class="border" id="hours"></span>Hours</li>
+    <li><span class="border" id="minutes"></span>Minutes</li>
+    <li><span class="border" id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+<audio src="sound.mp3" autoplay controls></audio>
+</aside>
+</div>
+  <script type="text/javascript" src="jquery.js"></script>
+</div>
+   		</textarea>
+  </form>
+  <br>
+  <br>
+  <h2>Source Code CSS</h2>
+  <form>
+    <textarea class="kgh" name="komentar5" disabled="disabled" rows="20">
+			* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 2000px;
+  position: fixed;
+  transform: translate(-50%,-50%);
+}
+
+.container {
+  color: lightblue;
+  text-align: center;
+  font-size: 22px;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+.box{
+  box-sizing: border-box;
+  transform: translate(-5%,-1%);
+  background-color: rgba(154, 18, 179,0.2);
+  top: 40%;
+  right:20%;
+  margin:25px 10px;
+  height: 100px 150px;
+}
+.sidebar .widgetgo:hover{
+  border-bottom:10px solid orange;
+}
+.sidebar{
+  height: 90px 40px;
+  margin: auto;
+}
+.border{
+  padding: 10px 20px;
+  margin: auto;
+  color: lightblue;
+  box-sizing: border-box;
+  box-shadow:5px 10px green;
+  background: rgba(34, 167, 240,0.1);
+}
+audio{
+  position: relative;
+  transform: translate(1%,80%);
+}
+		</textarea>
+  </form>
+  <br>
+  <br>
+  <h2>Source Code JS</h2>
+  <form>
+    <textarea class="kgh" name="komentar5" disabled="disabled" rows="20">
+			const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('january, 2020 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        
+    }, second)
+		</textarea>
+  </form>
+</body>
+
+</html>

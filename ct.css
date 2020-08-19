@@ -1,0 +1,80 @@
+.kgh textarea{
+	font-style: normal;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	color:#0000;
+}
+*{
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+	background-image: url("lgpra.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media only screen and (max-device-width:1366px) {
+	*{
+		background-attachment:scrool;
+	}
+}
+h1{
+	text-align: center;
+	color:#ffa500;
+	font-size: 25px;
+	color: #ffa500;
+}
+textarea{
+	width: 100%;
+	height: 100%;
+	font-weight: 200px;
+}
+h2{
+	text-align: center;
+	color: #a52a2a;
+}
+img{
+	max-height: 200px;
+	max-width: 200px;
+	float: center;
+	margin: auto;
+}
+@media screen and (max-width:680px){
+
+	#maincontent{
+		width: auto;
+		float: none;
+	}
+	#sidebar{
+		width: auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 480px) {
+
+#header{
+height: auto;
+}
+#sidebar{
+display: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #d3db61;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }  
+li a {
+    display: block;
+    color: #0000ff;
+    padding: 8px 16px;
+    text-decoration: underline;
+}
+li a:hover {
+    color: #deb887;
+    color: #fff;
+}
+}

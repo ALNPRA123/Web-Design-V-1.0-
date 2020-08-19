@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+    background-image: url("lgpra.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media only screen and (max-device-width:1366px){
+    *{
+        background-attachment:scrool;
+    }
+}
+.iuj h1{
+    text-align: center;
+    color: #ffdab9;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 37px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ohjimg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.ulo p{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 14px;
+    line-break: initial;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #d3db61;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+li a {
+    display: block;
+    color: #0000ff;
+    padding: 8px 16px;
+    text-decoration: underline;
+  }
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #deb887;
+    color: #fff;
+}
+.jhu h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
+    color: #90ee90;
+}
